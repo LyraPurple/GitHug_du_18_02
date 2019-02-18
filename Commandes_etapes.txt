@@ -1,0 +1,74 @@
+Nouveau repertoire
+Projet VS Code + enregistrer
+Nouveau dépôw git
+init GIT
+ignore .code-workspace
+ignore config .php
+Pousser le projet sur origine
+
+_____________________________________________________________________
+echo "# GitHug_du_18_02" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/LyraPurple/GitHug_du_18_02.git
+git push -u origin master
+---------------------------------------------------------------------
+
+Terminal:
+Dans le bon dossier:
+git init
+
+
+.gitignore: tout le monde peut voire les fichiers ignorés
+
+sinon on exclut:
+vim .git/info/exclude
+Si on est sur windows : Click drowâ sur le fichier "exclude", ouvrir avec visual studio code
+C: >Tes documents >Ton projay >.git >info >exclude
+
+_____________________________________________________________________
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+---------------------------------------------------------------------
+
+.DS_Store
+*.code-workspace
+
+On créé un nouveau fichier .gitignore
+Si on le créé sous windows ça sera tristement un .txt
+On met dedans config.php en écrivant:
+config.php
+public/
+public
+
+
+Ensuite on lie son répertoire local à gitHug:
+git remote add origin https://github.com/LyraPurple/GitHug_du_18_02.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mes commandes:
+
+
+git init
+.DS_Store
+*.code-workspace
+.gitignore
+git remote add origin https://github.com/LyraPurple/GitHug_du_18_02.git
