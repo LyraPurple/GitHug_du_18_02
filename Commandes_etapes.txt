@@ -35,9 +35,11 @@ _____________________________________________________________________
 # *.[oa]
 # *~
 ---------------------------------------------------------------------
+On écrit eud'ans:
 
 .DS_Store
 *.code-workspace
+
 
 On créé un nouveau fichier .gitignore
 Si on le créé sous windows ça sera tristement un .txt
@@ -50,13 +52,20 @@ public
 Ensuite on lie son répertoire local à gitHug:
 git remote add origin https://github.com/LyraPurple/GitHug_du_18_02.git
 
+git add *
+Ca veut dire: Tout les fichiers modifiés et ajoutés, on les index.
+Maintenant, il faut les empaqueter:
+git commit -m 'initial commit'
+En fait 'initial commit' , c'est le commentaire du commit, le premier s'appelle ainsi.
+Pour forcer l'indexation d'un fichier spécifique pas passé en vert:
+git add .gitignore
+git commit -m 'Ajout du GitIgnore'
+
+Pour la première fois qu'on push, on doit préciser:
+git push --set-upstream origin master
 
 
-
-
-
-
-
+On sélectionne le repertoire du projet
 
 
 
@@ -72,3 +81,8 @@ git init
 *.code-workspace
 .gitignore
 git remote add origin https://github.com/LyraPurple/GitHug_du_18_02.git
+git add *
+git commit -m 'initial commit'
+git add .gitignore
+git commit -m 'Ajout du GitIgnore'
+git push --set-upstream origin master
